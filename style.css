@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: solid 1px red;*/
+}
+body{
+    background-color: black;
+}
+.section_carosiell{
+    padding-top: 30px; /*Da rimuovere */
+    background-color: white;
+    height: 471px;
+    display: flex;
+    gap: 60px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.card{
+    height: 430px;
+    min-width: 410px;
+    position: relative;
+}
+
+.cover_img{
+    position: absolute;
+    height: 320px;
+    width: 350px;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+}
+.description_img{
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    width: 330px;
+    height: 210px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.description_logo{
+    width: 90px;
+    margin-top: 53px;
+    margin-left: 30px;
+    filter: invert(); /*il filtro va rimosso*/
+}
+.title_card{
+    margin-top: 38px;
+    margin-left: 30px;
+}
+.button_info{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    background-color: #FAB600;
+    transition: width 1s, height 1s;
+}
+
+/*ANIMATION*/
+
+.cover_img_animation{
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+}
+.button_info_animation{
+    height: 100%;
+    width: 100%;
+}
+.button_info_animation_no{
+    width: 60px;
+    height: 60px;
+}
