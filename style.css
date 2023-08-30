@@ -2,13 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: solid 1px red;*/
+
 }
 body{
     background-color: black;
 }
 .section_carosiell{
-    padding-top: 30px; /*Da rimuovere */
     background-color: white;
     height: 471px;
     display: flex;
@@ -29,6 +28,13 @@ body{
     z-index: 1;
     object-fit: cover;
     object-position: center;
+    overflow: hidden;
+}
+.img{
+    height: 320px;
+    width: 350px;
+    transform-origin: center center;
+    transition: transform 0.2s ease;
 }
 .description_img{
     background-color: white;
@@ -44,11 +50,17 @@ body{
     width: 90px;
     margin-top: 53px;
     margin-left: 30px;
-    filter: invert(); /*il filtro va rimosso*/
+    position: relative;
+    z-index: 1;
+    transition: 0.2s ease;
 }
 .title_card{
     margin-top: 38px;
     margin-left: 30px;
+    position: relative;
+    z-index: 1;
+    transition: 0.2s ease;
+    color: black;
 }
 .button_info{
     width: 60px;
@@ -56,20 +68,36 @@ body{
     position: absolute;
     right: 0;
     background-color: #FAB600;
-    transition: width 1s, height 1s;
+    transition: width 0.2s, height 0.2s;
+}
+.icon_arrow
+{
+    font-size: 12px;
+    color: black;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    transition: top 0.2s, right 0.5s;
 }
 
 /*ANIMATION*/
 
-.cover_img_animation{
-    transition: transform 0.2s ease;
-    transform-origin: center center;
-}
-.button_info_animation{
+.card:hover .button_info{
     height: 100%;
     width: 100%;
 }
-.button_info_animation_no{
-    width: 60px;
-    height: 60px;
+.card:hover .img{
+    transform: scale(1.1);
+}
+.card:hover .title_card{
+    color: white;
+}
+.card:hover .description_logo{
+    fill: white;
+}
+.card:hover .icon_arrow{
+    top: 180px;
+    z-index: 2;
 }
