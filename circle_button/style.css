@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+}
+.circle_button{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button{
+    background-color: white;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    color: #055274;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 22px;
+}
+.button_text {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: inherit;
+}
+
+.button:hover{
+    background-color: #055274;
+    color: white;
+}
