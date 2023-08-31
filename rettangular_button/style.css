@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+.rettangular_button{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button{
+    width: 177px;
+    height: 55px;
+    border: solid 1px white;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-image: linear-gradient(to right, transparent 0%, transparent 50%, #FAB600 50%, #FAB600 100%);
+    background-size: 200% 100%;
+    transition: all 0.3s ease, 0.3s ease;
+}
+.button_text{
+    transform: translateX(7px);
+    transition: transform 0.3s ;
+}
+.icon_arrow{
+    color: white;
+    font-size: 10px;
+    transition: opacity 0.3s ;
+    opacity: 0;
+}
+.button:hover .icon_arrow{
+    opacity: 1;
+}
+.button:hover .button_text{
+    transform: translateX(-7px);
+}
+.button:hover{
+    background-position: -100% 0;
+    border-color: transparent;
+}
