@@ -20,7 +20,7 @@ body{
     transition: all 0.3s ease, 0.3s ease;
 }
 .button_text{
-    transform: translateX(7px);
+    transform: translateX(5px);
     transition: transform 0.3s ;
 }
 .icon_arrow{
@@ -33,7 +33,7 @@ body{
     opacity: 1;
 }
 .button:hover .button_text{
-    transform: translateX(-7px);
+    transform: translateX(-6px);
 }
 .button:hover{
     background-position: -100% 0;
